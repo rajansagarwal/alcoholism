@@ -1,0 +1,126 @@
+<head>
+	<script src="script.js">
+
+	</script>
+	<link href="style.css" rel="stylesheet" />
+	<title>Rajan Agarwal</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"
+	/>
+</head>
+
+<body>
+	<div id="text-container">
+<div className="block">
+			<figure>
+				<img src="https://images.unsplash.com/photo-1577695464142-e3a24f4e88f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGFsY29ob2x8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="alcoholism" />
+      <figcaption>generated with artificial intelligence</figcaption>
+    </figure>
+</div>
+<div className="block">
+	<h2>think again.</h2><hr/><br/>
+
+		<div id="text-container-inner-s"></div>
+		<div id="text-container-inner-p"></div>
+	  <div id="text-container-inner-a"></div>
+	  <div id="text-container-inner-t"></div>
+</div>		
+	</div>
+
+	<script>
+		const s = `
+* soothing the
+* soul
+ * soul—seemingly 
+ * simple 
+  * simply insignificant
+ * and
+ * straightforward
+  * straightforward. self-explanatory, but 
+  * sincere
+   * sincere, offered by the 
+   * superior
+    * swell and
+    * scrupulous. 
+     * scrupulous. it's small but 
+     * supreme. 
+      * supreme, its sovereign, but 
+      * superlative.
+       * superlative. so, what
+       * do
+        * can
+         * will
+       * we do?
+`;
+		const p = `
+* the
+* perpetual 
+* paradox
+ * and paradoxical 
+ * paradigm
+  * paradigm of 
+  * purpose.
+   * purpose: perhaps, philanthropic or 
+   * pacifist? 
+    * pacifist? pragmatically, it's
+    * puzzling.
+     * puzzlingly
+     * poetic.
+      * poetic. we must
+      * protect
+       * protect, and we must preserve.
+
+`;
+		const t = `
+* truthfully, it's a 
+* trap
+ * trap ~ terrifying and 
+ * tangled
+  * tangled in and out of
+  * thought
+   * thoughtful treachary 
+  * and
+  * trust
+   * trustless 
+   * traitorousness
+    * traitorousness, towards 
+    * a new
+    * twist
+     * telltale
+      * telltale: because we stand for
+      * tea
+       * tea, not tequila.
+`;
+		const a = `
+* alas, what about
+* alcohol?
+ * alcohol? this abecedary signifies 
+ * feigned indifference
+  * utter desire
+   * accisimus
+    * accisimus, that inherently appreciates altruistic
+    * affirmations. 
+     * affirmations. the only 
+     * problem, 
+      * problem, is that
+      * affluence 
+       * affluence, in the face of 
+       * absoroption
+        * absorption, is just addiction.
+
+`;
+    const node = createTelescopicTextFromBulletedList(s);
+		const node2 = createTelescopicTextFromBulletedList(p);
+		const node3 = createTelescopicTextFromBulletedList(t);
+		const node4 = createTelescopicTextFromBulletedList(a);
+    const container = document.getElementById("text-container-inner-s");
+		const container2 = document.getElementById("text-container-inner-p");
+		const container3 = document.getElementById("text-container-inner-t");
+		const container4 = document.getElementById("text-container-inner-a");
+    container.appendChild(node);
+		container2.appendChild(node2);
+		container3.appendChild(node3);
+		container4.appendChild(node4);
+	</script>
+</body>

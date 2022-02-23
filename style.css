@@ -1,0 +1,87 @@
+:root {
+  --telescope-highlight: #8ca6fa55;
+  --telescope-highlight-hover: #6a8dff9a;
+  --telescope-text-color: #1f2021;
+}
+
+#telescope {
+  color: var(--telescope-text-color);
+}
+
+#telescope blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--telescope-text-color);
+  display: block !important;
+}
+
+#telescope .details {
+  display: inline;
+  border-radius: 3px;
+  background-color: var(--telescope-highlight);
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+#telescope .details.open {
+  background-color: transparent;
+  cursor: initial;
+}
+
+#telescope .details.open > .summary, #telescope .details.close > .expanded {
+  display: none;
+}
+
+figure {
+	padding-right: 3em;
+}
+
+#telescope .details.close:hover {
+  background-color: var(--telescope-highlight-hover);
+}
+
+#telescope .details *, #telescope p * {
+  list-style: none;
+  display: inline;
+}
+
+body {
+		background: #ede8e4;
+	}
+
+	#text-container {
+		color: #141312;
+		margin: 10vh 4vw;
+		font-size: 1.3rem;
+		display: flex;
+		line-height: 2.5rem;
+		font-family: "Libre Baskerville", serif;
+	}
+
+	img {
+		width: 40vw;
+		border-radius: 2px;
+		box-shadow: 5px 5px 41px 11px rgba(0, 0, 0, 0.4);
+	}
+
+	figure {
+		margin: 0 0 3vh;
+	}
+
+	figure>figcaption {
+		font-size: 1rem;
+		text-align: right;
+		font-style: italic;
+		opacity: 0.6;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		#text-container {
+			margin: 10vh 8vw;
+		  font-size: 2.3rem;
+			line-height: 5rem;
+		}
+		figure {
+			display: none;
+		}
+	}
